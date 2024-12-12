@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+<bean id="alien" class="com.chinmay.SpringFirstProject.Alien" scope="singleton">
+<property name="age" value="24"></property>
+<property name="la" ref="laptop"></property>
+</bean>
+
+<bean id="laptop" class="com.chinmay.SpringFirstProject.Laptop">
+</bean>
+</beans>
