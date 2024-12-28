@@ -15,9 +15,7 @@
 
 <constructor-arg name="la" ref="laptop"></constructor-arg>
 <constructor-arg name="age" value="21"></constructor-arg>
-
 </bean>
-
 <bean id="laptop" class="com.chinmay.SpringConstructorInjection.Laptop">
 </bean>
 </beans>
