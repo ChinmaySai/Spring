@@ -15,11 +15,7 @@ public class App
     System.out.println("Inside Java Based Config");
      Desktop desktop=context.getBean(Desktop.class);
      desktop.compile();
-    
-//        System.out.println("Inside Java Based Config");
-       //Desktop d=context.getBean("com",Desktop.class);
-//        Computer com=context.getBean(Computer.class);
-//         Desktop d1=context.getBean(Desktop.class);
+           Desktop d1=context.getBean(Desktop.class);
 
      
     }
