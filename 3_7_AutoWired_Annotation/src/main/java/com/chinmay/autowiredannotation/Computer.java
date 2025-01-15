@@ -1,4 +1,4 @@
-package com.chinmay.componentannotation;
+package com.chinmay.autowiredannotation;
 
 public interface Computer {
 

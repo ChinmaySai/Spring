@@ -1,5 +1,5 @@
 
-package com.chinmay.componentannotation;
+package com.chinmay.autowiredannotation;
 
 import java.beans.ConstructorProperties;
 

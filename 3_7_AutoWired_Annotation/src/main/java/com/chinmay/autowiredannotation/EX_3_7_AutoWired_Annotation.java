@@ -1,4 +1,4 @@
-package com.chinmay.componentannotation;
+package com.chinmay.autowiredannotation;
 
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
