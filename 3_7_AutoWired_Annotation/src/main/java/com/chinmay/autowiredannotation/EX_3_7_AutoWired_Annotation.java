@@ -10,9 +10,8 @@ public class EX_3_7_AutoWired_Annotation
 {
     public static void main( String[] args )
     {
-
     	ApplicationContext context=new AnnotationConfigApplicationContext(AppConfig.class);
-        System.out.println("Inside Component Annotation Exapmle");
+        System.out.println("Inside Autowired Annotation Exapmle");
 
      Alien al=context.getBean(Alien.class);
      al.code();

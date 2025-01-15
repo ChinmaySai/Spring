@@ -8,7 +8,7 @@ import org.springframework.context.annotation.Primary;
 
 
 @Configuration
-@ComponentScan("com.chinmay.componentannotation")
+@ComponentScan("com.chinmay.autowiredannotation")
 public class AppConfig {
 	
 //	@Bean
