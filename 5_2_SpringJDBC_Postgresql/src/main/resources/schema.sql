@@ -1,0 +1,1 @@
+create table student(id integer,name varchar(50),marks integer);
