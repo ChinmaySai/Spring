@@ -7,7 +7,7 @@
   <version>0.0.1-SNAPSHOT</version>
   <packaging>jar</packaging>
 
-  <name>AutoWire</name>
+  <name>3_5_Primary_Annotation</name>
   <url>http://maven.apache.org</url>
 
   <properties>
