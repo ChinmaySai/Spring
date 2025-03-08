@@ -16,7 +16,6 @@ public class App
      Desktop desktop=context.getBean("desktop",Desktop.class);
      Desktop desktop1=context.getBean("com1",Desktop.class);
      Desktop desktop2=context.getBean("Beast",Desktop.class);
-
      
      System.out.println(desktop.hashCode());
      System.out.println(desktop1.hashCode());
