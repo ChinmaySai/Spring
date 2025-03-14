@@ -16,7 +16,7 @@ public class HomeController {
 	{
 		return "index.jsp";
 	  }
-	@RequestMapping("add")
+	/*@RequestMapping("add")
 	public String add(HttpServletRequest req,HttpSession hs)
 	{
 		int num1=Integer.parseInt(req.getParameter("num1"));
@@ -24,5 +24,15 @@ public class HomeController {
         System.out.println("Addition Result "+(num1+num2));
         hs.setAttribute("result",(num1+num2));
 		return "result.jsp";
+	}*/
+	@RequestMapping("add")
+	public String add(int num1,int num2,HttpSession hs)
+	{
+		//int num1=Integer.parseInt(req.getParameter("num1"));
+		//int num2=Integer.parseInt(req.getParameter("num2"));
+        System.out.println("Addition Result "+(num1+num2));
+        hs.setAttribute("result",(num1+num2));
+		return "result.jsp";
 	}
+
 }
