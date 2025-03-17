@@ -9,6 +9,7 @@
 <%--         <h2>Result is:<%=session.getAttribute("result") %></h2> --%>
 
           <p>Result is : ${student}</p>
+          <p>Result is : ${courses}</p>
           
     </body>
 </html>

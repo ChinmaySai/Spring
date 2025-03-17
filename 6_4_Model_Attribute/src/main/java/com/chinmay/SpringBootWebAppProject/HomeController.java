@@ -85,5 +85,10 @@ public class HomeController {
 		
 		return "result";
 	}
-
+	
+	@ModelAttribute("courses")
+	public String courses()
+	{
+	return "Spring";
+	}
 }
