@@ -16,7 +16,7 @@ public class HomeController {
 	@RequestMapping("/")
 	public String home()
 	{
-		return "index.jsp";
+		return "index";
 	  }
 	/*@RequestMapping("add")
 	public String add(HttpServletRequest req,HttpSession hs)
@@ -55,7 +55,7 @@ public class HomeController {
         System.out.println("Addition Result "+(num+num2));
        model.addAttribute("result",(num+num2));
     //    hs.setAttribute("result",(num+num2));
-		return "result.jsp";
+		return "result";
 	}
 
 }
