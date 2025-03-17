@@ -79,7 +79,7 @@ public class HomeController {
 	//With Model Attribute Example
 	
 	@RequestMapping("addStudentData")
-	public String addStudentData(@ModelAttribute Student student)
+	public String addStudentData(Student student)
 	{
 		System.out.println("Inside Student Data");
 		
