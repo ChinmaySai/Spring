@@ -3,6 +3,7 @@ package com.chinmay.SpringBootWebAppProject;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -58,20 +59,31 @@ public class HomeController {
     
 		return mv;
 	}
+//	@RequestMapping("addStudentData")
+//	public ModelAndView addStudentData(@RequestParam("sid") int sid,String sname,ModelAndView mv)
+//	{
+//		
+//		Student st=new Student();
+//		st.setSname(sname);
+//		st.setSid(sid);
+//		mv.addObject("studentdata",st);
+//		mv.setViewName("result");
+////        System.out.println("Addition Result "+(num+num2));
+////       mv.addObject("result",(num+num2));
+////       mv.setViewName("result");
+////    
+//		return mv;
+//	}
+	
+	
+	//With Model Attribute Example
+	
 	@RequestMapping("addStudentData")
-	public ModelAndView addStudentData(@RequestParam("sid") int sid,String sname,ModelAndView mv)
+	public String addStudentData(@ModelAttribute Student student)
 	{
+		System.out.println("Inside Student Data");
 		
-		Student st=new Student();
-		st.setSname(sname);
-		st.setSid(sid);
-		mv.addObject("studentdata",st);
-		mv.setViewName("result");
-//        System.out.println("Addition Result "+(num+num2));
-//       mv.addObject("result",(num+num2));
-//       mv.setViewName("result");
-//    
-		return mv;
+		return "result";
 	}
 
 }
